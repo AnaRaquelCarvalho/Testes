@@ -1,0 +1,46 @@
+## Testando um Sistema de Controle de Estoque
+
+## Você foi contratado para desenvolver um sistema de controle de estoque para uma loja de videogames. O sistema deve permitir adicionar novos jogos ao estoque, atualizar informações existentes e verificar se um determinado jogo está disponível para venda. Sua tarefa é escrever testes utilizando o RSpec para garantir que o sistema funcione conforme o esperado.
+
+## Considere a seguinte classe Stock que representa o estoque de jogos da loja:
+
+#-----------------------------------------------------------------------------------------------#
+## class Stock
+  a## ttr_reader :games
+
+  ## def initialize
+    ## @games = {}
+  ## end
+
+  ## def add_game(title, quantity)
+    ## @games[title] ||= 0
+    ## @games[title] += quantity
+  ## end
+
+  ## def remove_game(title, quantity)
+    ## @games[title] ||= 0
+    ## @games[title] -= quantity if @games[title] >= quantity
+  ## end
+
+  ## def available?(title, quantity = 1)
+    ## @games[title].to_i >= quantity
+  ## end
+## end
+#-------------------------------------------------------------------------------------------
+
+## Aqui está uma descrição das operações que devem ser testadas:
+
+## Adicionar um novo jogo ao estoque.
+
+## Remover um jogo do estoque.
+
+## Verificar se um jogo está disponível para venda.
+
+# -----------------------------------------------------------------------------------------
+## Instruções:
+
+## Escreva testes para cada uma das operações acima utilizando o RSpec.
+
+## Utilize shared examples para reutilizar cenários de teste comuns.
+
+#-------------------------------------------------------------------------------------------
